@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
+    let linkedInSocial = "https://www.linkedin.com/in/sebastian-jonsson-1a8264180"
+
     return (
         <header className="bg-blue-800">
             <div className="container mx-auto flex justify-between">
@@ -25,7 +27,7 @@ export default function NavBar() {
                     </NavLink>
                 </nav>
                 <div className="inline-flex py-3 px-3 my-6">
-                    <SocialIcon url="https://www.linkedin.com/in/sebastian-jonsson-1a8264180" className="mr-4" target="_blank" fgColor="#fff" style={{height:35, width:35}}/>
+                    <SocialIcon url={linkedInSocial} className="mr-4" target="_blank" fgColor="#fff" style={{height:35, width:35}}/>
                 </div>
             </div>
         </header>

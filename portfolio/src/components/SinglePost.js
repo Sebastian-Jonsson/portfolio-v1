@@ -36,7 +36,7 @@ export default function SinglePost() {
         .catch(console.error)
     }, [slug])
     
-    if (!singlePost) return <div>Not Found...</div>
+    if (!singlePost) return <div>Post Not Found...</div>
 
     return (
         <main className="bg-gray-200 min-h-screen p-12">
