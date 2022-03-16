@@ -8,7 +8,7 @@ export default function NavBar() {
     return (
         <header className="bg-blue-800">
             <div className="container mx-auto flex justify-between">
-                <nav className="flex">
+                <nav className="">
                     <NavLink to="/" exact
                     className={(navData) => navData.isActive ? "text-yellow-600 inline-flex items-center py-6 px-3 mr-4 hover:text-yellow-600 text-4xl font-bold cursive tracking-widest" : "inline-flex items-center py-6 px-3 mr-4 text-blue-100 hover:text-yellow-600 text-4xl font-bold cursive tracking-widest" }>
                         Sebastian
@@ -25,10 +25,10 @@ export default function NavBar() {
                     className={(navData) => navData.isActive ? "bg-yellow-600 inline-flex items-center py-3 px-3 my-6 rounded text-blue-100 hover:text-blue-600 " : "inline-flex items-center py-3 px-3 my-6 rounded text-blue-100 hover:text-yellow-600" }>
                         About
                     </NavLink>
-                </nav>
                 <div className="inline-flex py-3 px-3 my-6">
                     <SocialIcon url={linkedInSocial} className="mr-4" target="_blank" fgColor="#fff" style={{height:35, width:35}}/>
                 </div>
+                </nav>
             </div>
         </header>
     )
