@@ -17,6 +17,7 @@ export default function Project() {
         }`
         )
         .then((data) => setProjectData(data))
+        // .then(projectData.sort((a, b) => a.date > b.date ? 1 : -1))
         .catch(console.error)
     }, [])
 
@@ -30,7 +31,7 @@ export default function Project() {
                     Welcome to my projects page!
                 </h2>
                 <section className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-                    {projectData && projectData.map((project) => (
+                    {projectData && projectData.sort((a, b) => a.date < b.date ? 1 : -1).map((project) => (
                     <article className="relative rounded-lg shadow-xl bg-white p-16">
                         <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-yellow-700">
                             <a

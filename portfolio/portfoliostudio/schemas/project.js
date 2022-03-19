@@ -9,6 +9,7 @@ export default {
         },
         {
             name: "date",
+            title: "Date Time",
             type: "datetime",
         },
         {
